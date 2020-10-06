@@ -1,3 +1,6 @@
 .idea
 .DS_Store
 *.iml
+*.mov
+*.mp4
+*.avi
