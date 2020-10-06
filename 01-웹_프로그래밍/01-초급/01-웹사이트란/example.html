@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <!-- 보여지는 내용이 아닙니다. -->
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <!-- 보여지는 내용입니다. -->
+    <h1
+      style="color: #09F; font-size: 50px;"
+      onclick="alert('경고 : ' + this.innerHTML.trim())"
+    >
+      안녕하세요. 황준일입니다.
+    </h1>
+    <p style="font-size: 50px; font-weight: bold;">
+      저는 27살입니다.
+    </p>
+    <button onclick="document.querySelector('h1').innerHTML = '변경'">
+      눌러주세요
+    </button>
+    <button onclick="document.querySelector('h1').style.color = '#f09'">
+      색상변경
+    </button>
+  </body>
+</html>
