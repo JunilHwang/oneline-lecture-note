@@ -47,4 +47,5 @@
 
 ## 예제파일
 
-- [example01.html](./example01.html)
+- [example01.html](example01.html)
+- [example02.html](example02.html)
