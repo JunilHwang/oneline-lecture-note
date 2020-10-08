@@ -45,6 +45,47 @@
   - float: left
   - float: right
 
+## class와 id
+
+- id
+  - 한 페이지에 한 개의 아이디만 존재 해야 한다.
+  - 한 개의 태그에 대해 독립적으로 사용하기 위한 속성이다.
+  - style에서 사용할 때 앞에 `#`을 붙인다.
+  - 사용방법
+```html
+<style>
+  #header {}
+  #section {}
+  #footer {}
+</style>
+
+<div id="header"></div>
+<div id="section"></div>
+<div id="footer"></div>
+```
+
+- class
+  - 한 페이지에 여러 개의 class가 존재할 수 있다.
+  - 여러 태그에 사용하기 위한 속성이다.
+  - class 속성에 여러 개의 class를 정의할 수 있다.
+  - style에서 사용할 때 앞에 `.`을 붙인다.
+  - 사용방법
+  
+```html
+<style>
+  .center { text-align: center; }
+  .red { color: red; }
+  .blue { color: blue; }
+  .size20 { font-size: 20px; }
+</style>
+
+<div class="center red">빨간 글자에 가운데 정렬</div>
+<strong class="blue">파란 글자</strong>
+<strong class="red size20">빨간 글자에 20px의 크기</strong>
+<strong class="blue size20">파란 글자에 20px의 크기</strong>
+```
+  
+
 ## 예제파일
 
 - [example01.html](./example01.html)
