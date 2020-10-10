@@ -23,15 +23,15 @@
 
 ## CSS Property
 
-- width
-- height
-- color
-- background
-- font-size
-- border
-- margin
-- padding
-- line-height
+- width: 가로너비
+- height: 세로너비
+- color: 글자색
+- background: 배경색
+- font-size: 글자크기
+- border: 테두리
+- margin: 바깥여백
+- padding: 안쪽여백
+- line-height: 줄간격
 
 ## 위치를 변경하기 위한 속성
 
