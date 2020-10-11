@@ -5,6 +5,7 @@
 ## 예제파일 링크
 
 - https://repl.it/join/kgtzcjwc-junilhwang
+- [메뉴 만들기](./example.html)
 
 ## 복습
 

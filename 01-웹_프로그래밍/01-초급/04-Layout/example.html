@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul, li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #navigation {
+      display: flex;
+      justify-content: center;
+    }
+    #navigation a {
+      display: block; /* block으로 지정하면 여백, 너비 등을 사용할 수 있습니다. */
+      transition: 0.3s;
+    }
+    #navigation > li > ul {
+      display: none;
+    }
+    #navigation > li:hover > ul {
+      display: block;
+    }
+    #navigation > li > a {
+      padding: 15px 20px;
+      color: #09F;
+    }
+    #navigation > li:hover > a {
+      background: #09F;
+      color: #fff;
+    }
+    #navigation > li > ul > li > a {
+      text-align: center;
+      background: #f5f5f5;
+      padding: 7px 0;
+      font-size: 13px;
+      border-bottom: 1px dotted #ddd;
+      color: #666;
+    }
+    #navigation > li > ul > li > a:hover {
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+<ul id="navigation">
+  <li>
+    <a href="#">메인메뉴 01</a>
+    <ul>
+      <li><a href="#">서브메뉴 01</a></li>
+      <li><a href="#">서브메뉴 02</a></li>
+      <li><a href="#">서브메뉴 03</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">메인메뉴 02</a>
+    <ul>
+      <li><a href="#">서브메뉴 01</a></li>
+      <li><a href="#">서브메뉴 02</a></li>
+      <li><a href="#">서브메뉴 03</a></li>
+      <li><a href="#">서브메뉴 04</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">메인메뉴 03</a>
+    <ul>
+      <li><a href="#">서브메뉴 01</a></li>
+      <li><a href="#">서브메뉴 02</a></li>
+      <li><a href="#">서브메뉴 03</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">메인메뉴 04</a>
+    <ul>
+      <li><a href="#">서브메뉴 01</a></li>
+      <li><a href="#">서브메뉴 02</a></li>
+      <li><a href="#">서브메뉴 03</a></li>
+      <li><a href="#">서브메뉴 04</a></li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>
