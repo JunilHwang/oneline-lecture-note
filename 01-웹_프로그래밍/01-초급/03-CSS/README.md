@@ -2,6 +2,10 @@
 
 - https://webskills.kr/2018/data/WEB_HTML_CSS.pdf
 
+## 예제파일 링크
+
+- https://repl.it/join/kgtzcjwc-junilhwang
+
 ## HTML 이란?
 
 - HyperText Markup Language
@@ -108,8 +112,3 @@
 - float
   - float: left
   - float: right
-  
-
-## 예제파일 링크
-
-- https://repl.it/join/kgtzcjwc-junilhwang
