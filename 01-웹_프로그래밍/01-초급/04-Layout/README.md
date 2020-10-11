@@ -54,3 +54,25 @@
   - 상 10px / 하 7px / 좌,우 15px
 - `margin: 10px 15px 7px 5px`
   - 상 10px / 우 15px / 하 7px / 좌 5px
+
+## border
+
+- `border`
+  - 상하좌우 테두리에 대해서 사용 가능
+- `border-top`
+  - `상측` 테두리
+- `border-bottom`
+  - `하측` 테두리
+- `border-left`
+  - `좌측` 테두리
+- `border-right`
+  - `우측` 테두리
+- `border-width`
+  - `border-width: 1px` : 상하좌우 테두리의 너비를 1px
+  - `border-width: 1px 2px` : `상하` 1px / `좌우` 2px
+  - `border-width: 1px 2px 3px` : `상` 1px / `하` 2px / `좌우` 3px
+  - `border-width: 1px 2px 3px 4px` : `상` 1px / `우` 2px / `하` 3px / `좌` 4px (시계방항)
+- `border-style`
+  - `border-style: solid` 직선
+  - `border-style: dotted` 점선1
+  - `border-style: dashed` 점선2
