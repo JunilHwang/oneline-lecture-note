@@ -33,17 +33,19 @@
 - padding: 안쪽여백
 - line-height: 줄간격
 
-## 위치를 변경하기 위한 속성
+## 간단한 Style 표현
 
-- display
-  - display: block
-  - display: inline
-  - display: inline-block
-  - display: flex
-    
-- float
-  - float: left
-  - float: right
+```html
+    <div style="width: 100px; background: #000; color: #fff; height: 100px; font-size: 20px; border: 10px solid #f00;">
+      여백 없음
+    </div>
+    <div style="width: 100px; background: #000; color: #fff; height: 100px; font-size: 20px; border: 10px solid #f00; margin: 20px;">
+      Margin 20px
+    </div>
+    <div style="width: 100px; background: #000; color: #fff; height: 100px; font-size: 20px; border: 10px solid #f00; padding: 20px; line-height: 200%">
+      Padding 20px
+    </div>
+```
 
 ## class와 id
 
@@ -84,6 +86,18 @@
 <strong class="red size20">빨간 글자에 20px의 크기</strong>
 <strong class="blue size20">파란 글자에 20px의 크기</strong>
 ```
+
+## 위치를 변경하기 위한 속성
+
+- display
+  - display: block
+  - display: inline
+  - display: inline-block
+  - display: flex
+    
+- float
+  - float: left
+  - float: right
   
 
 ## 예제파일
