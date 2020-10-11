@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+    .wrap {
+      width: 1000px;
+    }
+
+		.flex {
+			display: flex;
+		}
+
+    .header {
+      height: 100px;
+    }
+    .logo {
+      width: 200px;
+      background: #ffa;
+    }
+    .menu {
+      width: 800px;
+      background: #faa;
+    }
+    .content {
+      height: 450px;
+    }
+    .content-left {
+      width: 500px;
+      height: 450px;
+      background: #faf;
+    }
+    .content-right {
+      width: 500px;
+      height: 450px;
+    }
+    .content-right div { height: 150px; }
+    .content-right-01 { background: #fee; }
+    .content-right-02 { background: #fef; }
+    .content-right-03 { background: #eef; }
+    .footer { background: #333; color: #fff; height: 50px; }
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="flex header">
+			<div class="logo">로고영역</div>
+			<div class="menu">메뉴영역</div>
+		</div>
+		<div class="flex content">
+			<div class="content-left">좌측 컨텐츠</div>
+			<div class="content-right">
+				<div class="content-right-01">우측 컨텐츠 영역 01</div>
+				<div class="content-right-02">우측 컨텐츠 영역 02</div>
+				<div class="content-right-03">우측 컨텐츠 영역 03</div>
+			</div>
+		</div>
+		<div class="footer">
+			카피라이트 영역
+		</div>
+	</div>
+</body>
+
+</html>
