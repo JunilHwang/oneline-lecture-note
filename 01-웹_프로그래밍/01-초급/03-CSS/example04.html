@@ -1,42 +1,30 @@
-<!doctype html>
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CSS 예제</title>
-  <style>
-    .header {
-      height: 100px;
-      background: #FFA;
-    }
-    .content {
-      padding: 30px;
-      background: #FDF;
-      overflow: auto;
-    }
-    .section {
-      width: 80%;
-      float: left;
-      height: 400px;
-      background: #BFF;
-    }
-    .aside {
-      float: left;
-      width: 20%;
-      height: 400px;
-      background: #BBF;
-    }
-    .footer {
-      height: 80px;
-      background: #AFA;
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+    .color-red { color: red }
+    .color-white { color: white; }
+    .center { text-align: center; }
+    .bg-blue { background: blue; }
+    .bg-lighten-01 { background: #FFA; }
+    .bg-lighten-02 { background: #FAF; }
+    .font20 { font-size: 20px; }
+    .font30 { font-size: 30px; }
+	</style>
 </head>
+
 <body>
-  <div class="header"></div>
-    <div class="content">
-      <div class="section"></div>
-      <div class="aside"></div>
-    </div>
-  <div class="footer"></div>
+  <div class="color-red center">DIV 1</div>
+  <div class="color-red">DIV 2</div>
+  <div class="color-white bg-blue">DIV 3</div>
+  <div class="color-red bg-lighten-01">DIV 4</div>
+  <div class="color-red bg-blue center">DIV 5</div>
+  <div class="color-white bg-lighten-02 center font20">DIV 6</div>
+  <div class="color-red bg-blue font30">DIV 7</div>
 </body>
+
 </html>
