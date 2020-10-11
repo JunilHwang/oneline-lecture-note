@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+    .color-01 { color: #F00}
+    .color-02 { color: #0F0}
+    .color-03 { color: #00F}
+    .color-04 { color: #F0F}
+    .color-05 { color: #0FF}
+    .flex {
+      display: flex;
+    }
+    .flex div {
+      background: #f0f0f0;
+      border: 1px solid #000;
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+    }
+    .flex2 {
+      display: flex;
+    }
+    .flex2-inner {
+      background: #f0f0f0;
+      border: 1px solid #000;
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+    }
+	</style>
+</head>
+
+<body>
+  <div class="flex">
+    <div class="color-01">안</div>
+    <div class="color-02">녕</div>
+    <div class="color-03">하</div>
+    <div class="color-04">세</div>
+    <div class="color-05">요</div>
+  </div>
+  <div class="flex2">
+    <div class="flex2-inner color-01">안</div>
+    <div class="flex2-inner color-02">녕</div>
+    <div class="flex2-inner color-03">하</div>
+    <div class="flex2-inner color-04">세</div>
+    <div class="flex2-inner color-05">요</div>
+  </div>
+</body>
+</html>
