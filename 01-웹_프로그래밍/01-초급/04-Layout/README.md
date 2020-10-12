@@ -5,7 +5,12 @@
 ## 예제파일 링크
 
 - https://repl.it/join/kgtzcjwc-junilhwang
-- [메뉴 만들기](./example.html)
+- [메뉴 만들기](./example01.html)
+- [슬라이드 만들기](./example02.html)
+
+## 관련 링크
+
+- [css-slide 만들기](http://junil-hwang.com/blog/css-slide-animation/)
 
 ## 복습
 
@@ -36,6 +41,9 @@
   - `부모태그 > 자식태그`
 - 자손 선택은 `스페이스바( )`를 이용합니다.
   - `조상태그 자식태그`
+- `n`번째 태그 선택: `nth-child(n)`
+  - `.slide-wrap > div:nth-child(1)`
+  - `class="slide-wrap"`인 태그의 자식 중 첫 번째 div 태그
 
 ## padding, margin
 
@@ -77,3 +85,14 @@
   - `border-style: solid` 직선
   - `border-style: dotted` 점선1
   - `border-style: dashed` 점선2
+
+## display: flex
+- `justify-content`
+  - `justify-content: center` 자식 요소를 가운데 정렬 합니다.
+
+## transition
+
+- 변화를 서서히 일으킨다.
+- `transition: 0.3s`
+  - 0.3초 동안 변화가 일어난다.
+  - 즉, 0.3초 동안 애니메이션이 발생한다.
