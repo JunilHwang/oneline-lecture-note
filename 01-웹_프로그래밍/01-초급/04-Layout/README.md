@@ -59,6 +59,8 @@
   - 상,하,좌,우 10px
 - `margin: 10px 15px`
   - 상,하 10px / 좌,우 15px
+- `margin: 10px auto`
+  - 상,하 10px / 좌,우 `(100% - width) / 2`
 - `margin: 10px 15px 7px`
   - 상 10px / 하 7px / 좌,우 15px
 - `margin: 10px 15px 7px 5px`
@@ -96,3 +98,34 @@
 - `transition: 0.3s`
   - 0.3초 동안 변화가 일어난다.
   - 즉, 0.3초 동안 애니메이션이 발생한다.
+
+## @keyframes
+- keyframes을 통해서 애니메이션을 만들 수 있다.
+
+```css
+// slide01 이라는 애니메이션을 정의한다.
+@keyframes slide01 {
+  /*
+    진행률 { 진행 시점에 대한 속성(Property)과 값(Value) }
+  */
+  0% { margin-left: 0 } /* 6초를 기준으로 0초 시점 */
+  33% { margin-left: -1000px } /* 6초를 기준으로 2초 시점 */
+  66% { margin-left: -2000px } /* 6초를 기준으로 4초 시점 */
+  100% { margin-left: 0 }  /* 6초를 기준으로 6초 시점 */
+}
+
+div {
+  /*
+    animation: [애니메이션 이름] [애니메이션의 실행 시간] [반복횟수]
+  */
+  animation: slide01 6s infinite;
+}
+```
+
+## overflow
+
+- 사전적의미는 `넘쳐흐르다`라는 뜻
+- 넘쳐흐르는 영역에 대한 제어
+- `overflow: hidden` 넘쳐 흐르는 영역이 보이지 않도록 한다.
+- `overflow: auto` 넘쳐 흐르는 영역이 있을 경우 스크롤이 생긴다.
+- `overflow: visible` 무조건 스크롤이 생긴다. 
