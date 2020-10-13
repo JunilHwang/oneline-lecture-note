@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>슬라이드 만들기</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    .slide {
+      width: 1000px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .slide-wrap {
+      width: 3000px;
+      display: flex;
+    }
+    .slide-wrap > div {
+      width: 1000px;
+      height: 400px;
+    }
+    .slide-wrap > div:nth-child(1) {
+      background-color: #FFA;
+    }
+    .slide-wrap > div:nth-child(2) {
+      background-color: #FAA;
+    }
+    .slide-wrap > div:nth-child(3) {
+      background-color: #AFA;
+    }
+
+    .slide-animation-01 {
+      animation: slide01 6s infinite;
+    }
+
+    @keyframes slide01 {
+    0 { margin-left: 0 } /* 6초를 기준으로 0초 시점 */
+    33% { margin-left: -1000px } /* 6초를 기준으로 2초 시점 */
+    66% { margin-left: -2000px } /* 6초를 기준으로 4초 시점 */
+    100% { margin-left: 0 }  /* 6초를 기준으로 6초 시점 */
+    }
+
+    .slide-animation-02 {
+      animation: slide02 6s infinite;
+    }
+
+    @keyframes slide02 {
+    0 { margin-left: 0 } /* 6초를 기준으로 0초 시점 */
+    20% { margin-left: 0 }
+    33% { margin-left: -1000px } /* 6초를 기준으로 2초 시점 */
+    53% { margin-left: -1000px }
+    66% { margin-left: -2000px } /* 6초를 기준으로 4초 시점 */
+    86% { margin-left: -2000px }
+    100% { margin-left: 0 }  /* 6초를 기준으로 6초 시점 */
+    }
+  </style>
+</head>
+<body>
+<section class="slide">
+  <div class="slide-wrap slide-animation-01">
+    <div></div> <!-- .slide-wrap > div:nth-child(1) -->
+    <div></div> <!-- .slide-wrap > div:nth-child(2) -->
+    <div></div> <!-- .slide-wrap > div:nth-child(3) -->
+  </div>
+</section>
+<section class="slide">
+  <div class="slide-wrap slide-animation-02">
+    <div></div> <!-- .slide-wrap > div:nth-child(1) -->
+    <div></div> <!-- .slide-wrap > div:nth-child(2) -->
+    <div></div> <!-- .slide-wrap > div:nth-child(3) -->
+  </div>
+</section>
+</body>
+</html>
