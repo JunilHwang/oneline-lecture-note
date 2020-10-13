@@ -128,4 +128,25 @@ div {
 - 넘쳐흐르는 영역에 대한 제어
 - `overflow: hidden` 넘쳐 흐르는 영역이 보이지 않도록 한다.
 - `overflow: auto` 넘쳐 흐르는 영역이 있을 경우 스크롤이 생긴다.
-- `overflow: visible` 무조건 스크롤이 생긴다. 
+- `overflow: visible` 무조건 스크롤이 생긴다.
+
+## attribute href
+
+- `href`는 사이트의 링크도 될 수 있고 태그의 `id값`이 될 수도 있다.
+```html
+<style>
+#test:target { background: #000; color: #fff }
+</style>
+<a href="#test">test의 위치로 갈 수 있다.</a>
+<div id="test">id가 test입니다. </div>
+```
+- 이 때, 주소에서 가르키는 id값(hash값)이 있을 경우, **css selector의 target으로 선택**할 수 있다.
+ 
+## position
+- position 속성을 사용하면 `left` `right` `top` `bottom` 등의 속성을 같이 사용할 수 있습니다.
+- `z-index` 속성도 사용할 수 있습니다.
+  - z 축. 포토샵으로 따지면 레이어의 위치
+- `position: fixed`
+  - 스크롤 위치에 상관 없이 지정한 좌표에 고정시킨다.
+- `position: relative`
+- `position: absolute`
