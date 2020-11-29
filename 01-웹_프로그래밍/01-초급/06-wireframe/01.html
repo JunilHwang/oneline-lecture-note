@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-1</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    .container { width: 1200px; margin: 0 auto; }
+    .flex { display: flex; }
+
+    .site-header { justify-content: space-between; height: 100px; }
+    .site-header .logo { width: 200px; outline: 1px solid #000;}
+    .site-header .menu { width: 1000px; outline: 1px solid #000;}
+
+    .slide { height: 300px; outline: 1px solid #000; }
+
+    .content {  height: 200px; }
+    .content .box { width: 400px; outline: 1px solid #000; }
+
+    .site-footer { height: 100px; }
+    .site-footer-logo { width: 200px; outline: 1px solid #000; }
+    .site-footer .copyright { width: 800px; outline: 1px solid #000; }
+    .site-footer .sns { width: 200px; outline: 1px solid #000; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="site-header flex">
+    <div class="logo">로고</div>
+    <div class="menu">메뉴</div>
+  </div>
+  <div class="slide">슬라이드</div>
+  <div class="content flex">
+    <div class="box">공지사항/갤러리</div>
+    <div class="box">배너</div>
+    <div class="box">바로가기</div>
+  </div>
+  <div class="site-footer flex">
+    <div class="site-footer-logo">로고</div>
+    <div class="copyright">copyright</div>
+    <div class="sns">sns</div>
+  </div>
+</div>
+</body>
+</html>
