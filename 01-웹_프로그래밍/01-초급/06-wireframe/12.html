@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-4</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    .wrap { width: 1000px; height: 650px }
+    .flex { display: flex; }
+
+    .site-left { width: 200px; }
+    .site-content { width: 800px; }
+
+    .site-logo { height: 100px; outline: 1px solid #000;}
+    .site-menu { height: 550px; outline: 1px solid #000;}
+
+    .slide { height: 350px; outline: 1px solid #000;}
+
+    .content { height: 200px; }
+    .content-box { width: calc(100% / 3); outline: 1px solid #000;}
+
+    .footer { height: 100px; }
+    .footer-logo { width: 150px; outline: 1px solid #000;}
+    .footer-copy { width: 500px; outline: 1px solid #000;}
+    .footer-family { width: 150px; outline: 1px solid #000;}
+  </style>
+</head>
+<body>
+
+<div class="wrap flex">
+
+  <div class="site-left">
+    <div class="site-logo">로고</div>
+    <div class="site-menu">메뉴</div>
+  </div>
+
+  <div class="site-content">
+
+    <div class="slide">슬라이드</div>
+
+    <div class="content flex">
+      <div class="content-box">공지사항/갤러리</div>
+      <div class="content-box">배너</div>
+      <div class="content-box">바로가기</div>
+    </div>
+
+    <div class="footer flex">
+      <div class="footer-logo">로고</div>
+      <div class="footer-copy">카피라이트</div>
+      <div class="footer-family">패밀리사이트</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
