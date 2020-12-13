@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-3</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    .container { width: 1200px; margin: 0 auto; }
+    .flex { display: flex }
+
+    .header { background: #ddd;}
+    .header .container { height: 100px; }
+    .header-logo { width: 200px; outline: 1px solid #000;}
+    .header-menu { width: 1000px; outline: 1px solid #000;}
+
+    .slide { height: 300px; outline: 1px solid #000;}
+
+    .content { height: 200px; }
+    .content-box { width: 400px; outline: 1px solid #000;}
+
+    .footer { background: #ddd;  }
+    .footer .container { height: 100px; }
+
+    .footer-logo { width: 200px; outline: 1px solid #000; }
+    .footer-copyright { width: 800px; outline: 1px solid #000; }
+    .footer-sns { width: 200px; outline: 1px solid #000; }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div class="container flex">
+    <div class="header-logo"></div>
+    <div class="header-menu"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="slide"></div>
+  <div class="flex content">
+    <div class="content-box"></div>
+    <div class="content-box"></div>
+    <div class="content-box"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container flex">
+    <div class="footer-logo"></div>
+    <div class="footer-copyright"></div>
+    <div class="footer-sns"></div>
+  </div>
+</body>
+</html>
