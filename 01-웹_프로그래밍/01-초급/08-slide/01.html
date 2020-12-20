@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Fade</title>
+  <style>
+      * { margin: 0; padding: 0; }
+      .container {
+          width: 1200px;
+          margin: 0 auto;
+      }
+
+      .slide{ position: relative; height: 300px;}
+      .slide > div {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          animation: fade-in-out 9s infinite;
+      }
+      .slide > div:nth-child(1) { background: #FFA; }
+      .slide > div:nth-child(2) { background: #FAA; animation-delay: 3s; }
+      .slide > div:nth-child(3) { background: #AFA; animation-delay: 6s; }
+
+      @keyframes fade-in-out {
+          0% { opacity: 0; } /* 안보임 */
+          10% { opacity: 1; } /* 보임 */
+          30% { opacity: 1; } /* 보임 */
+          40% { opacity: 0; } /* 안보임 */
+          100% { opacity: 0; } /* 안보임 */
+      }
+
+      .slide-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100px;
+          line-height: 100px;
+          background: rgba(0,0,0,  0.5);
+          text-align: center;
+          color: #fff;
+          font-size: 19px;
+          font-weight: bold;
+      }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="slide">
+    <div>
+      <p class="slide-text">
+        여러분의 꿈이 현실이 되는 곳
+      </p>
+    </div>
+    <div>
+      <p class="slide-text">
+        빛나는 당신을 응원합니다
+      </p>
+    </div>
+    <div>
+      <p class="slide-text">
+        꿈을 품고 열정을 다하여 도전하라
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
