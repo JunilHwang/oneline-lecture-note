@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-cols</title>
+  <style>
+      * { margin: 0; padding: 0; }
+      .wrap { width: 1000px; height: 650px }
+      .flex { display: flex; }
+
+      .site-left { width: 200px; }
+      .site-content { width: 800px; }
+
+      .site-logo { height: 100px; outline: 1px solid #000;}
+      .site-menu { height: 550px; outline: 1px solid #000;}
+
+      .slide-wrap { height: 350px; overflow: hidden; }
+      .slide { display: flex; height: 350px; width: 2400px; animation: slide 9s infinite; }
+      .slide > div { height: 350px; width: 800px; position: relative; }
+      .slide > div:nth-child(1) { background: #FFA; }
+      .slide > div:nth-child(2) { background: #FAA; }
+      .slide > div:nth-child(3) { background: #AFA; }
+
+      @keyframes slide {
+          0% { margin-left: 0; }
+          20% { margin-left: 0; }
+          33% { margin-left: -800px; }
+          53% { margin-left: -800px; }
+          66% { margin-left: -1600px; }
+          86% { margin-left: -1600px; }
+          100% { margin-left: 0; }
+      }
+
+      .slide-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100px;
+          line-height: 100px;
+          background: rgba(0,0,0,  0.5);
+          text-align: center;
+          color: #fff;
+          font-size: 19px;
+          font-weight: bold;
+      }
+
+      .content { height: 200px; }
+      .content-box { width: calc(100% / 3); outline: 1px solid #000;}
+
+      .footer { height: 100px; }
+      .footer-logo { width: 150px; outline: 1px solid #000;}
+      .footer-content { width: 650px; }
+      .footer-menu { height: 50px; outline: 1px solid #000;}
+      .footer-copyright { height: 50px; outline: 1px solid #000;}
+  </style>
+</head>
+<body>
+
+<div class="wrap flex">
+
+  <div class="site-left">
+    <div class="site-logo">로고</div>
+    <div class="site-menu">메뉴</div>
+  </div>
+
+  <div class="site-content">
+
+
+    <div class="slide-wrap">
+      <div class="slide">
+        <div>
+          <p class="slide-text">
+            여러분의 꿈이 현실이 되는 곳
+          </p>
+        </div>
+        <div>
+          <p class="slide-text">
+            빛나는 당신을 응원합니다
+          </p>
+        </div>
+        <div>
+          <p class="slide-text">
+            꿈을 품고 열정을 다하여 도전하라
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content flex">
+      <div class="content-box">공지사항/갤러리</div>
+      <div class="content-box">배너</div>
+      <div class="content-box">바로가기</div>
+    </div>
+
+    <div class="footer flex">
+      <div class="footer-logo">로고</div>
+      <div class="footer-content">
+        <div class="footer-menu">하단 메뉴</div>
+        <div class="footer-copyright">카피라이트</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
