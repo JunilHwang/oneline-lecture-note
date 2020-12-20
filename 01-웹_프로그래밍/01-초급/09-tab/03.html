@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수동 슬라이드</title>
+  <style>
+      * {margin: 0; padding: 0;}
+      ul, li { list-style: none; }
+
+
+      .slide { width: 1000px; margin: 0 auto; position: relative; overflow: hidden; }
+      .slide input { display: none; }
+      .slide ul { width: 3000px; height: 300px; display: flex; transition: 1s; }
+      .slide li { width: 1000px; height: 300px; }
+      .slide li:nth-child(1) { background: #FFA; }
+      .slide li:nth-child(2) { background: #FAA; }
+      .slide li:nth-child(3) { background: #AFA; }
+
+      #pos1:checked ~ ul { margin-left: 0; }
+      #pos2:checked ~ ul { margin-left: -1000px; }
+      #pos3:checked ~ ul { margin-left: -2000px; }
+
+      .bullet {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: center;
+      }
+      .bullet label {
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          border: 2px solid #ddd;
+          background: #fff;
+          margin: 0 5px;
+          transition: 0.3s;
+      }
+
+      #pos1:checked ~ .bullet label[for="pos1"]{ background: #09F; border-color: #09F; }
+      #pos2:checked ~ .bullet label[for="pos2"]{ background: #09F; border-color: #09F; }
+      #pos3:checked ~ .bullet label[for="pos3"]{ background: #09F; border-color: #09F; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <input type="radio" name="slide" id="pos1" checked>
+  <input type="radio" name="slide" id="pos2">
+  <input type="radio" name="slide" id="pos3">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <div class="bullet">
+    <label for="pos1"></label>
+    <label for="pos2"></label>
+    <label for="pos3"></label>
+  </div>
+</div>
+</body>
+</html>
