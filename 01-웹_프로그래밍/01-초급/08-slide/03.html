@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Top-Down</title>
+  <style>
+      * { margin: 0; padding: 0; }
+      .container {
+          width: 1200px;
+          margin: 0 auto;
+      }
+
+      .slide-wrap { height: 300px; overflow: hidden; }
+      .slide { height: 300px;  animation: slide 9s infinite; }
+      .slide > div { height: 300px; position: relative; }
+      .slide > div:nth-child(1) { background: #FFA; }
+      .slide > div:nth-child(2) { background: #FAA; }
+      .slide > div:nth-child(3) { background: #AFA; }
+
+      @keyframes slide {
+          0% { margin-top: 0; }
+          20% { margin-top: 0; }
+          33% { margin-top: -300px; }
+          53% { margin-top: -300px; }
+          66% { margin-top: -600px; }
+          86% { margin-top: -600px; }
+          100% { margin-top: 0; }
+      }
+
+      .slide-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100px;
+          line-height: 100px;
+          background: rgba(0,0,0,  0.5);
+          text-align: center;
+          color: #fff;
+          font-size: 19px;
+          font-weight: bold;
+      }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="slide-wrap">
+    <div class="slide">
+      <div>
+        <p class="slide-text">
+          여러분의 꿈이 현실이 되는 곳
+        </p>
+      </div>
+      <div>
+        <p class="slide-text">
+          빛나는 당신을 응원합니다
+        </p>
+      </div>
+      <div>
+        <p class="slide-text">
+          꿈을 품고 열정을 다하여 도전하라
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
