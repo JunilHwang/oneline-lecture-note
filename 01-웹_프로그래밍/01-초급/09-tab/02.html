@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      * { margin:0; padding: 0; }
+      input { display: none; }
+
+      .tab-menu { display: flex; }
+      .tab-menu label {
+          width: 100px;
+          border: 1px solid #000;
+          padding: 5px;
+          margin: 0 5px;
+          cursor: pointer;
+      }
+
+      #tab1:checked ~ .tab-menu > label[for="tab1"] { border-color: #09F; }
+      #tab2:checked ~ .tab-menu > label[for="tab2"] { border-color: #09F; }
+
+      .tab-content {
+          display: none;
+          width: 500px;
+          height: 500px;
+          background: #f5f5f5;
+          margin: 5px;
+          border: 1px solid #ddd;
+          padding: 10px;
+      }
+      #tab1:checked ~ #content1 { display: block; }
+      #tab2:checked ~ #content2 { display: block; }
+  </style>
+</head>
+<body>
+<input type="radio" name="tab" id="tab1" checked />
+<input type="radio" name="tab" id="tab2" />
+<div class="tab-menu">
+  <label for="tab1">탭메뉴 01</label>
+  <label for="tab2">탭메뉴 02</label>
+</div>
+<div class="tab-content" id="content1">
+  content1의 내용입니다.
+</div>
+<div class="tab-content" id="content2">
+  content2의 내용입니다.
+</div>
+</body>
+</html>
